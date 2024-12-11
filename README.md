@@ -19,13 +19,15 @@ The system uses **Collaborative Filtering** with **Cosine Similarity** to sugges
 The system requires a **CSV file** with ratings from multiple users for different movies. The CSV file should have movies as columns, users as rows, and their ratings in the matrix.
 
 **Example data**:
-
+```bash
 Movie1, Movie2, Movie3, Movie4, Movie5
 5, 3, 0, 1, 4
 4, 0, 0, 1, 2
 0, 1, 2, 4, 0
 3, 0, 4, 0, 3
 
+Where `0` means the user has not rated the movie, and any value between 1 and 5 represents the rating given by the user.
+```
 
 Where `0` means the user has not rated the movie, and any value between 1 and 5 represents the rating given by the user.
 
@@ -35,12 +37,20 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/Shreyash125/Vyorius-Assignment-AI.git
-
+```
+3. Setup and Build the Project
+Change to the project directory:
+```bash
 cd Vyorius-Assignment-AI
-
+```
+Compile the code (using g++ for example):
+```bash
 g++ -o movie_recommendation src/main.cpp
-
+```
+Run the program:
+```bash
 ./movie_recommendation
+```
 
 4. Running the Program
 The program will prompt you for the following:
@@ -58,3 +68,8 @@ calculateCosineSimilarity(): Compares two users and calculates how similar their
 predictUserRating(): Predicts a user’s rating for a movie they haven’t rated yet.
 getTopNRecommendations(): Generates a list of top N recommended movies for a user.
 calculateRMSE(): Computes the RMSE to evaluate how good the recommendations are.
+
+
+
+
+
