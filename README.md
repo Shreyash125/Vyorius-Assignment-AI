@@ -52,21 +52,19 @@ Run the program:
 ./movie_recommendation
 ```
 
-4. Running the Program
-The program will prompt you for the following:
 
-The path to your CSV file (e.g., data/ratings.csv).
-The target user ID (The user for whom you want to get recommendations).
-The number of movie recommendations (How many movies to recommend).
-After you input these details, the program will generate a ranked list of recommended movies and display the RMSE value, indicating how accurate the recommendations are.
 
 Functions
 Here’s a quick overview of what the program does behind the scenes:
 
 loadRatingsFromFile(): Loads the ratings data from a CSV file.
+
 calculateCosineSimilarity(): Compares two users and calculates how similar their ratings are.
+
 predictUserRating(): Predicts a user’s rating for a movie they haven’t rated yet.
+
 getTopNRecommendations(): Generates a list of top N recommended movies for a user.
+
 calculateRMSE(): Computes the RMSE to evaluate how good the recommendations are.
 
 
